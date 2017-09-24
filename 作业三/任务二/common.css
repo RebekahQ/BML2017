@@ -1,0 +1,140 @@
+/*样式重置*/
+*{
+	margin:0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: 0;
+}
+img{
+	border:0;
+}
+/*******header开始*****/
+#header{
+	
+	height: 76px;
+	width: 1100px;
+	line-height: 76px;
+
+}
+#header.logo{
+	margin-top: 9px;
+	float: left;
+}
+#nav{
+	float: right;
+	margin-top: 20px;
+	list-style-type: none;
+
+}
+#nav li{
+	width: 90px;
+	height: 36px;
+	float: left;
+	list-style-type: none;
+}
+#nav li a{
+	
+	float: left;
+	width: 100%;
+	height: 100%;
+	background:#ccc;
+	text-align: center;
+	line-height: 36px;
+	color: #434343;
+	font-weight: bold;
+	font-size: 15px; 
+	list-style-type: none;
+
+
+}
+#nav li a:hover{
+	color: #e06666;
+
+}
+/***********header结束*****/
+
+/*******news开始**********/
+#news{
+
+	height:152px;
+	
+}
+
+
+.wrap: {
+	width: 1100px;
+	margin: 0 auto; 
+
+}
+#trends{
+	width: 640px;
+	float: left;
+	margin-top: 20px;
+}
+#trends.trends-title,#notice .notice-title{
+	float: left;
+	color: #333;
+	font-size: 16px;
+
+}
+#trend.trends-more,#notice .notice-more {
+	float: left;
+	color: #333;
+	font-size: 12px;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+#trend.trends-more :hover，#notice .notice-more:hover{
+	background:orange;
+	border-radius: 15px;
+}
+#trends  .trends-list{
+	clear: both;
+}
+#trends.trends-list li{
+	width: 295px;
+	height: 100%;
+	float: right;
+	background: url(../img/news-list-style.png) no-repeat; 
+	text-indent: 15px;
+}
+#trends.trend-list a{
+	color: #333;
+	font-size: 12px;
+
+}
+#notice{
+	width: 400px;
+	height: 100%;
+	float: right;
+	
+}
+#notice .notice-list{
+	width: 382px;
+	border:1px dotted #333;
+	clear:both;
+}
+#notice .notice-list li{
+	height: 28px;
+	float: none;
+}
+/*********news结束********/
+#header,#news{
+	width: 1100px;
+	margin: 0 auto;
+
+}
+/********course开始*******/
+/********course结束*******/
+
+/********slogan开始*******/
+/********slogan开始*******/
+
+/********question开始*******/
+/********question开始*******/

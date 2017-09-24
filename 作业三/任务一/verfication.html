@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>任务一</title>
+
+	<style type="text/css">
+		
+		#ground{
+			
+			width: 400px;
+			height: 500px;
+			border: 3px solid #f8fcfb;
+			background-color: #b7f5de; 
+			margin: 180px  880px;
+			
+		}
+		#case{
+			width: 250px;
+			height: 300px;
+			position: relative;
+			margin: 100px auto;
+			background-color: #c9fdd7;
+			
+			padding-left: 20px;
+			padding-bottom: 20px;
+			
+
+		}
+
+		#sub{
+			padding-left: 70px;
+			padding-top: 45px;
+		}
+
+		#hint{
+			font-size: 3px;
+			font-color:#b9bbdf;
+			text-align: center;
+			padding-top: auto;
+			margin-top: 1px;
+		}
+		#user{
+			
+			width: 100px;
+
+		}
+		#key{
+			width: 100px;
+			padding-right: 12px;
+			
+
+		}
+
+
+		#auser,#akey{
+			padding-top: 45px;
+			padding-left: 10px;
+			line-height: 15px;
+		}
+		
+	</style>
+</head>	
+
+
+
+<body background="/kino.jpg">
+
+	<!--<embed src="E:/轻音乐/GreeneryRain.mp3" autostart="true" loop="false" hidden="false">-->
+	<div id="ground">
+	<div id="case">
+		<div id="auser">用户名
+			<input id="user" type="text" > 
+
+			<div id="hint">
+				<p>请输入 数字+字母</p>
+			</div>
+			
+		</div>
+		<div id="akey">密 码
+			<input id="key" type="text" >
+
+			<div id="hint">
+				<p>请输入 字母+*+？</p>
+			</div>
+			
+		</div>
+		<div id="sub">
+			<button onclick="myFunction()">提交验证</button>
+		</div>
+	</div>
+	</div>
+	<script>
+	
+		function myFunction(){
+			var x = document.getElementById("user").value;
+			var y = document.getElementById("key").value;
+			var a = /^[0-9a-zA-Z]*$/g;
+			var b = /^[a-zA-Z\*\?]*$/g;
+			//var c = /^*$/g;
+			if(a.test(x)&&b.test(y)){
+				alert("true");}	
+			else{alert("请输入正确的格式");}
+		}
+	</script>
+	
+
+</body>
+</html>
